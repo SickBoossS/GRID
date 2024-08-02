@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    grid-area: header;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "header header"
+      "aside section"
+       "footer footer"; 
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+section {
+    padding: 20px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+
+
+}
+
+.grid-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-container {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+     align-items: center;
+      justify-content: center;
+      overflow: hidden;
+       border-radius: 10px;
+       margin-bottom: 10px;
+    }
+.image-container img { 
+        width: 100%;
+         height: 100%;
+          object-fit: contain; 
+        }
+button { 
+            background-color: #2980b9; 
+            color: white; border: none; 
+            padding: 10px 20px; cursor: pointer;
+             border-radius: 5px; 
+            }
+ button:hover { 
+                background-color: #1f6391;
+             }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
